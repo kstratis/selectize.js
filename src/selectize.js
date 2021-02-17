@@ -1422,7 +1422,6 @@ $.extend(Selectize.prototype, {
 		self.options = self.sifter.items = options;
 		self.lastQuery = null;
 		self.trigger('option_clear');
-		self.clear(silent);
 	},
 
 	/**
@@ -1472,7 +1471,7 @@ $.extend(Selectize.prototype, {
 
 		return $();
 	},
-	
+
 	/**
 	 * Finds the first element with a "textContent" property
 	 * that matches the given textContent value.
